@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todolist</title>
+    <link rel="stylesheet" href="todolist.css">
+
+</head>
+<body>
+<main>
+    <header>
+        <form action="" name="myform">
+            <input type="text" placeholder="请输入代办事项" name="content" required>
+            <input type="submit" value="Submit" name="submit">
+        </form>
+    </header>
+    <ul class="tab">
+        <li class="hot" type="all">全部</li>
+        <li type="done">完成</li>
+        <li type="doing">未完</li>
+        <div class="top1"></div>
+    </ul>
+    <ul class="content">
+        <li>
+            <input type="checkbox" checked>
+            <p>端午节后交作业</p>
+            <del>X</del>
+            <time>2019/6/4</time>
+        </li>
+        <li>端午节后交作业</li>
+        <li>端午节后交作业</li>
+    </ul>
+</main>
+<script src="todolist.js"></script>
+</body>
+</html>

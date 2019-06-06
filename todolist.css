@@ -1,0 +1,90 @@
+body, h1, h2, h3, h4, h5, p, ul, li, ol, form, textarea, select {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+body{
+    background: #ffffff;
+}
+header{
+    height: 40px;
+    border-bottom: 1px solid #e4e3e3;
+    margin: 5px auto;
+}
+header > form{
+    width: 900px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /*margin: 0 auto;*/
+}
+header > form > input{
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    padding: 6px 12px;
+    color: #333333;
+    font-size: 14px;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    background: #ffffff;
+}
+main{
+    width: 900px;
+    height: auto;
+    margin: 130px auto;
+}
+main > .tab{
+    height: 40px;
+    display: flex;
+    position: relative;
+}
+main > .tab > li{
+    width: 300px;
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 40px;
+}
+.tab > li.hot{
+    /*background: #57ac57;*/
+    color: white;
+}
+.tab > .top1{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #3ab1ff;
+    z-index: -1;
+    transition: all cubic-bezier(0.02, 0.9, 0.97,-0.01) .5s;
+}
+li.hot:nth-child(1) ~ .top1{
+    transform: translate(0,0);
+}
+li.hot:nth-child(2) ~ .top1{
+    transform: translate(100%,0);
+}
+li.hot:nth-child(3) ~ .top1{
+    transform: translate(200%,0);
+}
+.content > li {
+    font-size: 20px;
+    line-height: 3;
+    padding: 0 10px;
+    border-bottom: 1px solid #e4e3e3;
+}
+.content > li >p{
+    display: inline-block;
+}
+.content > li > time{
+    float: right;
+}
+.content > li > del{
+    float: right;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
